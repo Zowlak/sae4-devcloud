@@ -1,0 +1,38 @@
+version: "3.8"
+networks:
+  monreseau:
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.20.0.0/24
+services:
+  web: # nom du service
+    build:
+      context: /Users/zowlak/Desktop/Cours/SAEDev/Projet/gitlab/saedev/V3/web # dossier du service
+      dockerfile: Dockerfile # l'image se construite à partir du
+    container_name: V3Web # à compléter
+    ports:
+      - 9000:80 # 'porthote:portcontainer'
+    networks:
+      monreseau:
+        ipv4_address: 172.20.0.2
+  db: # db est un service
+    build:
+      context: /Users/zowlak/Desktop/Cours/SAEDev/Projet/gitlab/saedev/V3/bdd
+      dockerfile: Dockerfile
+    container_name: V3BDD
+    ports:
+      - 5432:5432 # 'porthote:portcontainer'
+    networks:
+      monreseau:
+        ipv4_address: 172.20.0.3
+  api:
+    build:
+      context: /Users/zowlak/Desktop/Cours/SAEDev/Projet/gitlab/saedev/V3/api/
+      dockerfile: Dockerfile
+    container_name: V3API
+    ports:
+      - 8000:8000
+    networks:
+      monreseau:
+        ipv4_address: 172.20.0.4

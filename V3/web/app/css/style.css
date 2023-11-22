@@ -1,0 +1,49 @@
+.tabcenter {
+  /* permet de centrer le tableau sur la page */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formCenter {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+table /* Le tableau en lui-même */ {
+  border: 2px outset #343a40; /* Bordure du tableau avec effet 3D (outset) */
+  border-collapse: collapse; /* Colle les bordures entre elles */
+}
+
+th /* Les cellules d'en-tête */ {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  font-size: 1.1em;
+  font-family: Arial, "Arial Black", Times, "Times New Roman", serif;
+}
+
+td /* Les cellules normales */ {
+  border: 2px solid #343a40;
+  text-align: center;
+  font-family: "Comic Sans MS", "Trebuchet MS", Times, "Times New Roman", serif;
+  text-align: center; /* Tous les textes des cellules seront centrés*/
+  padding: 5px; /* Petite marge intérieure aux cellules pour éviter que le texte touche les bordures */
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 5%;
+  background: #ed7307;
+  background: linear-gradient(to right, #ff7800, #ff9d45);
+}
+
+footer {
+  color: white;
+}
+
+.images {
+  height: 240px;
+}
