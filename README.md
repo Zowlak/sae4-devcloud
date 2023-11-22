@@ -1,4 +1,13 @@
-## Projet de la SAÉ4-DevCloud - Développer et déployer un microservice dans un environnement virtualisé
+# Projet de la SAÉ4-DevCloud - Développer et déployer un microservice dans un environnement virtualisé
+
+Technologies / Langages utilisés dans la projet :
+
+- PHP
+- Docker
+- SQLIte
+- PostgreSQL
+- Python
+- FastAPI
 
 ## Version 1 - PHP & SQLite
 
